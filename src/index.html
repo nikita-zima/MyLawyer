@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/sidebarMenu.js"></script>
+  <script src="js/telegram.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/favicon.ico">
+  <script type="text/javascript" src="js/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Адвокат Одесса</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="#header"><img class="logo__img" src="assets/Неголюк_Сергей-removebg-preview.png" alt="logo"></a>
+    </div>
+
+    <nav class="nav" id="menu">
+      <a class="nav__link" href="#spheres">Сферы практики</a>
+      <a class="nav__link" href="#about" >Обо мне</a>
+      <a class="nav__link" href="#price">Цены</a>
+      <a class="nav__link" href="#services">Услуги</a>
+      <a class="nav__link" href="#contacts">Контакты</a>
+    </nav>
+
+    <div class="header__contacts" id="header">
+      <a class="link__l" href="tel:+380677248372">+380677248372</a>
+      <div class="header__loc">
+        <div class="first__column">
+        <img class="place" src="assets/place.png"  alt="">
+        <a>Одесса, улица</a>
+          <div class="second__column">
+            <a>Фонтанская дорога, 41</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-header" id="#mobile__header">
+      <div class="logo-wrapper">
+        <a href="#header"><img class="logo_mobile" src="assets/Неголюк_Сергей-removebg-preview.png" alt="logo"></a>
+      </div>
+      <button class="hamburger-btn"></button>
+      <div class="mobile-sidebar-navigation">
+        <div class="open__header">
+            <img class="logo_mobile" src="assets/Неголюк_Сергей-removebg-preview.png" alt="logo">
+          <button class="close-navigation"></button>
+        </div>
+        <nav class="nav_mobile" id="nav_mobile">
+          <a class="nav__link__mobile" href="#spheres">Сферы практики</a>
+          <a class="nav__link__mobile" href="#about" >Обо мне</a>
+          <a class="nav__link__mobile" href="#price">Цены</a>
+          <a class="nav__link__mobile" href="#services">Услуги</a>
+          <a class="nav__link__mobile" href="#contacts">Контакты</a>
+        </nav>
+        <div class="hamburger__contacts">
+          <a class="link__l" href="tel:+380677248372">+380677248372</a>
+          <div class="header__loc">
+            <div class="first__column">
+              <img class="place" src="assets/place.png"  alt="">
+              <a>Одесса, улица</a>
+                <a>Фонтанская дорога, 41</a>
+            </div>
+          </div>
+        </div>
+        <a class="floating-button" href="#contacts">Получить консультацию</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="intro">
+    <div class="intro__content">
+      <div class="intro__text">
+      <h1>80% успеха в суде - своевременное обращение к адвокату</h1>
+      </div>
+      <p class="intro__comp">Согласно <a class="nav__link" href="https://kodeksy.com.ua/konstitutsiya_ukraini/statja-63.htm">статье 63 Конституции Украины</a>, лицо не несёт ответственности
+      за отказ давать показания или объяснения в отношениях себя, членов семьи или близких роственников, круг которых определяется законом</p>
+      <p class="intro_mobi">Оставьте заявку, и мы свяжемся с вами в течение 15 минут</p>
+      <a href="#contacts" class="floating-button">Получить консультацию</a>
+    </div>
+    <div class="intro__photo">
+  <img class="intro__photo__main" src="assets/IMG_8665.jpg" alt="photo">
+    </div>
+  </div>
+
+  <section class="spheres" id="spheres">
+    <h2>Сферы практики</h2>
+    <div class="spheres__content">
+      <div class="first__row">
+        <div class="spheres__box first__box" >
+          <h3>Недвижимость</h3>
+          <a href="spheres/property.html" class="floating-button">Подробнее</a>
+        </div>
+        <div class="spheres__box second__box">
+          <h3>Кредитование</h3>
+          <a href="spheres/credit.html" class="floating-button">Подробнее</a>
+        </div>
+      </div>
+      <div class="second__row">
+        <div class="spheres__box third__box">
+          <h3>ДТП</h3>
+          <a href="spheres/accident.html" class="floating-button">Подробнее</a>
+        </div>
+        <div class="spheres__box fourth__box">
+          <h3>Земельные вопросы</h3>
+          <a href="spheres/land.html" class="floating-button">Подробнее</a>
+        </div>
+      </div>
+      <div class="third__row">
+        <div class ="spheres__box fifth__box">
+          <h3>Семейные споры</h3>
+          <a href="spheres/family.html" class="floating-button">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="about__me" id="about">
+  <div class="about__header">
+    <h2 class="no__dec">Адвокат</h2>
+    <h2>Неголюк Сергей Борисович</h2>
+  </div>
+  <div class="about__content">
+    <div class="about__text">
+      <div class="text__first">
+        <p>Адвокат Неголюк Сергей Борисович, занимается юридической практикой с <span class="important"> 1997 года</span>, работал юристом в органах местного самоуправления,
+      Госгеокадастра и коммерческих предприятиях.</p></div>
+      <div class="text__second"><p>
+        <span class="important">Специализация</span> адвоката представление интересов водителей, при нарушении правил дорожного движения,
+      ведение кредитных дел – споры с банками и МФО, семейные споры, земельные споры и защита интересов собственников
+      как движимого так и недвижимого имущества.</p>
+      </div>
+    </div>
+    <div class="photo">
+      <img class="about__photo__comp" src="assets/фото_auto_x1.jpg" alt="photo">
+      <img class="about__photo__mobi" src="assets/IMG_8665.jpg" alt="photo">
+    </div>
+    </div>
+</section>
+
+<section class="prices" id="price">
+ <h2>Как мы работаем</h2>
+   <div class="prices__content">
+     <div class="step">
+       <img class="step__img" src="assets/number-one-inside-a-circle.png" alt="">
+       <p>Предостовляем вам письменную или устную консультацию с подробным алгоритмом действий </p>
+     </div>
+     <div class="step">
+       <img class="step__img" src="assets/2.png" alt="">
+       <p>Рассматриваем ситуацию с точки зрения закона и права</p>
+     </div>
+     <div class="step">
+       <img class="step__img" src="assets/3.png" alt="">
+       <p>Фиксируем цену на наши услуги и обязательства в договоре </p>
+     </div>
+     <div class="step">
+       <img class="step__img" src="assets/4.png" alt="">
+       <p>Вы уже под защитой професионального адвоката</p>
+     </div>
+
+   </div>
+  <a href="#contacts" class="floating-button">Получить консультацию</a>
+</section>
+
+<section class="types" id="services">
+  <h2>Виды юридической помощи</h2>
+  <div class="types__content">
+    <div class="left__column">
+       <div class="types__boxes">
+         <img class="types__img" src="assets/official-documents%20(1).png" alt="">
+         <h4>Составление юридических документов</h4>
+         <ul>
+           <li>аппеляционные жалобы </li>
+           <li>кассационные жалобы</li>
+           <li>обжалуем постановления </li>
+           <li>Заявления, ходатайства, возражения, претензии, объяснения и многие другие документы</li>
+         </ul>
+       </div>
+      <div class="types__boxes">
+        <img class="types__img" src="assets/deal.png" alt="">
+        <h4>Сфера недвижимости</h4>
+        <ul>
+          <li>оформление документов</li>
+          <li>решения проблем при изменении границ земельных участков</li>
+          <li>сопровождение сделок с недвижимостью</li>
+          <li>помощь при возмещении ущерба и многое другое</li>
+        </ul>
+      </div>
+    </div>
+    <div class="right__column">
+      <div class="types__boxes">
+        <img class="types__img" src="assets/car%20(4).png" alt="">
+        <h4>Помощь при возниконвении ДТП</h4>
+        <ul>
+          <li>взыскание страховых компаний</li>
+          <li>составление искового заявление при дтп</li>
+          <li>лишение водительских прав</li>
+          <li>адвокат по дтп, а также другие виды адвокатской помощи</li>
+        </ul>
+      </div>
+      <div class="types__boxes">
+        <img class="types__img" src="assets/warning-sign.png" alt="">
+        <h4>Помощь в вопросах кредитования</h4>
+        <ul>
+          <li>кредитные споры</li>
+          <li>защита от коллекторов</li>
+          <li>закрытие долгов</li>
+          <li>исполнительная подпись нотариуса и многое другое</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2749.704591399127!2d30.746878115553862!3d46.43473449667242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63392227f91f3%3A0xc8b200d22e4f7e2!2z0KTQvtC90YLQsNC90YHQutCw0Y8g0LTQvtGALiwgNDEsINCe0LTQtdGB0YHQsCwg0J7QtNC10YHRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNjUwMDA!5e0!3m2!1sru!2sua!4v1609942541110!5m2!1sru!2sua">
+  </iframe>
+</section>
+
+<section class="form" id="contacts">
+  <div class="form__content">
+    <div class="telephone">
+      <p>Телефон:<a href="tel: +380677248372"> +380677248372</a></p>
+      <p>Адресс: Одесса, улица Фонтанская дорога, 41</p>
+    </div>
+    <div class="form__form">
+      <form class="main-form" id="contact-form">
+        <h3>Остались вопросы?</h3>
+        <h5>Мы свяжемся с вами в течение 15 минут</h5>
+        <input class="input_form" type="text" placeholder="Как к вам обращаться?" name="name">
+        <input class="input_form" type="text" placeholder="Введите номер телефона" name="number">
+        <button id="btnSubmit" class="button">Связаться со мной</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="logo__bottom">
+    <a href="#header"><img class="logo__img" src="assets/Неголюк_Сергей-removebg-preview.png" alt="logo"></a>
+  </div>
+  <div class="nav__bottom">
+     <h5>Навигация</h5>
+      <a href="#spheres">Сферы практки</a>
+      <a href="#about">Обо мне</a>
+      <a href="#price">Цены</a>
+    <a href="#services">Услуги</a>
+     <a href="#contacts">Контакты</a>
+  </div>
+  <div class="contacts__bottom">
+    <h5>Контакты</h5>
+    <div class="cont__one"><img class="contacts__img" src="assets/phone-call.png" alt=""><p><a href="tel: +380677248372"> +380677248372</a></p></div>
+    <div class="cont__one"><img class="contacts__img" src="assets/place%20(2).png" alt=""> <p>Одесса, улица Фонтанская дорога, 41</p></div>
+    <div class="cont__one"><img class="contacts__img" src="assets/clock.png" alt=""><p>пн-пт с 09:30 до 18:00</p></div>
+    <div class="cont__one"><p>сб с 09:30 до 16:00</p></div>
+  </div>
+  <div class="author">
+    <h5>Дизайн и разработка</h5>
+    <a href="https://telegram.me/tochnoneloh">Никита Зима</a>
+  </div>
+</footer>
+</body>
+</html>
